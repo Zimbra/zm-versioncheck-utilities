@@ -15,5 +15,6 @@
 # If not, see <https://www.gnu.org/licenses/>.
 # ***** END LICENSE BLOCK *****
 # 
+export EXT_JAR_PATH="/opt/zimbra/lib/ext/zimbraadminversioncheck/zimbraadminversioncheck.jar"
+exec `dirname $0`/../bin/zmjava  com.zimbra.cs.versioncheck.VersionCheckUtil "$@"
 
-exec `dirname $0`/../bin/zmjava -classpath /opt/zimbra/lib/ext/zimbraadminversioncheck/zimbraadminversioncheck.jar com.zimbra.cs.versioncheck.VersionCheckUtil "$@"
